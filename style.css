@@ -1,0 +1,79 @@
+:root {
+  --primary-dark: #1A237E;   /* Gehra neela - Text aur Navbar */
+  --accent-blue: #3A7CA5;    /* Samundari neela - Primary Buttons */
+  --highlight: #D96459;      /* Sunset orange - Alerts/Important Buttons */
+  --bg-light: #F2EBBF;       /* Rait jaisa rang - Background sections */
+  --text-soft: #585858;      /* Neutral grey - Body text ke liye */
+  --font-light: #F2EBBF; 
+  
+  /* 2. Light backgrounds (like Body) par use karne ke liye */
+  --font-dark: #1B325F;
+  
+  /* 3. Links aur Buttons ke liye */
+  --font-link: #3A7CA5;
+}
+*{
+   margin: 0;
+   padding: 0;
+   scroll-behavior: smooth;
+   scrollbar-width: thin;
+   
+   
+} 
+body {
+/* background: radial-gradient(circle at top right, #3A7CA5, #1B325F);
+  background-attachment: fixed;
+  color: #F2EBBF; */
+  /* background-color:#E0F7FA; */
+  background: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExczA1bG9rZnM3YnRhejVtN3N0ZG03YnhqOXZ6N3V6a3I2eHRwbW5reiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MyWrJJIdAfoJuEPlLP/giphy.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* height: 100vh;
+  width: 100vw; */
+}
+.myNav{
+   /* background-color: var(--primary-dark); */
+   background: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2syNTA4YjBnYWMya3hmamltY2t5ZjlydDBsYmJjZmtydHByeXlteSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oz8xJJLjm73vn0N5S/giphy.gif);
+  /* background: url(https://i.makeagif.com/media/1-03-2015/mAZdqY.gif); */
+  /* background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKOQj1xIDQyj6_SugYxu1fQT8RYS-9h4Dctg&s); */
+   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: cursive;
+   
+} 
+.tag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    color: var(--primary-dark); /* Deep Navy */
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+a{
+  text-decoration: none !important;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* {}  */
