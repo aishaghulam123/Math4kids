@@ -1,79 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap");
+
 :root {
-  --primary-dark: #1A237E;   /* Gehra neela - Text aur Navbar */
-  --accent-blue: #3A7CA5;    /* Samundari neela - Primary Buttons */
-  --highlight: #D96459;      /* Sunset orange - Alerts/Important Buttons */
-  --bg-light: #F2EBBF;       /* Rait jaisa rang - Background sections */
-  --text-soft: #585858;      /* Neutral grey - Body text ke liye */
-  --font-light: #F2EBBF; 
-  
-  /* 2. Light backgrounds (like Body) par use karne ke liye */
-  --font-dark: #1B325F;
-  
-  /* 3. Links aur Buttons ke liye */
-  --font-link: #3A7CA5;
+  --kid-purple: #7c4dff;
+  --kid-purple-dark: #5c3dc7;
+  --kid-coral: #ff6b6b;
+  --kid-sun: #ffd93d;
+  --kid-mint: #6bcb77;
+  --kid-sky: #4dccc6;
+  --kid-peach: #ffeaa7;
+  --kid-cloud: #fff9f0;
+  --kid-ink: #2d3436;
+  --kid-ink-soft: #636e72;
+  --kid-shadow: rgba(45, 52, 54, 0.12);
+  --kid-shadow-lg: rgba(45, 52, 54, 0.18);
+  --radius-pill: 9999px;
+  --radius-card: 1.25rem;
+  --font-display: "Fredoka", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Nunito", "Segoe UI", system-ui, sans-serif;
 }
-*{
-   margin: 0;
-   padding: 0;
-   scroll-behavior: smooth;
-   scrollbar-width: thin;
-   
-   
-} 
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--kid-purple) #eee;
+  box-sizing: border-box;
+}
+
+
+
 body {
-/* background: radial-gradient(circle at top right, #3A7CA5, #1B325F);
+  font-family: var(--font-body);
+  color: var(--kid-ink);
+  min-height: 100vh;
+  background: linear-gradient(
+    165deg,
+    #e8f4fc 0%,
+    #fff5e6 35%,
+    #fce4ec 70%,
+    #e8f5e9 100%
+  );
   background-attachment: fixed;
-  color: #F2EBBF; */
-  /* background-color:#E0F7FA; */
-  background: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExczA1bG9rZnM3YnRhejVtN3N0ZG03YnhqOXZ6N3V6a3I2eHRwbW5reiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MyWrJJIdAfoJuEPlLP/giphy.gif);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  /* height: 100vh;
-  width: 100vw; */
 }
-.myNav{
-   /* background-color: var(--primary-dark); */
-   background: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2syNTA4YjBnYWMya3hmamltY2t5ZjlydDBsYmJjZmtydHByeXlteSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oz8xJJLjm73vn0N5S/giphy.gif);
-  /* background: url(https://i.makeagif.com/media/1-03-2015/mAZdqY.gif); */
-  /* background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKOQj1xIDQyj6_SugYxu1fQT8RYS-9h4Dctg&s); */
-   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  font-family: cursive;
-   
-} 
-.tag{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.5rem;
-    color: var(--primary-dark); /* Deep Navy */
-    text-align: center;
-    margin-top: 20px;
-    font-style: italic;
-    font-weight: 400;
-    letter-spacing: 1px;
-}
-a{
+
+
+
+a {
   text-decoration: none !important;
-  
+  color: inherit;
+}
+
+/* ——— Navbar ——— */
+.myNav {
+  font-family: var(--font-display);
+  background: linear-gradient(
+    135deg,
+    var(--kid-purple) 0%,
+    #9b7aff 45%,
+    var(--kid-coral) 100%
+  ) !important;
+  box-shadow: 0 8px 32px var(--kid-shadow-lg);
+  border-bottom: 4px solid rgba(255, 255, 255, 0.35);
+  border-radius: 0 0 24px 24px;
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+
+.kids-brand {
+  color: #fff !important;
+  font-size: clamp(1.35rem, 4vw, 2rem) !important;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-shadow: 2px 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+.kids-brand b {
+  color: var(--kid-sun);
+  font-size: 1.1em;
+  text-shadow: 2px 2px 0 var(--kid-purple-dark);
+}
+
+.btn-home {
+  background: #fff !important;
+  color: var(--kid-purple) !important;
+  font-family: var(--font-display);
+  font-weight: 600;
+  border: 3px solid rgba(255, 255, 255, 0.9) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-home:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  color: var(--kid-coral) !important;
+}
+
+/* ——— Tagline ——— */
+.tag {
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  /* color: var(--kid-ink-soft); */
+  text-align: center;
+  margin-top: 0.5rem;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+/* ——— Carousel ——— */
+#carouselExampleCaptions {
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: 0 12px 40px var(--kid-shadow-lg);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+#carouselExampleCaptions .carousel-item img {
+  height: 280px !important;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  #carouselExampleCaptions .carousel-item img {
+    height: 320px !important;
+  }
 }
 
 
 
+#carouselExampleCaptions .carousel-caption h5 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* ——— Home cards ——— */
+.kids-card-grid {
+  padding-bottom: 3rem;
+}
+
+.kids-card-grid .card {
+  border: none;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: 0 10px 30px var(--kid-shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  height: 100%;
+  background: var(--kid-cloud);
+  border: 3px solid #fff;
+}
+
+.kids-card-grid a:hover .card {
+  transform: translateY(-8px) rotate(-0.5deg);
+  box-shadow: 0 18px 40px var(--kid-shadow-lg);
+}
+
+.kids-card-grid .card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+.kids-card-grid .card-body {
+  padding: 1.25rem;
+}
+
+.kids-card-grid .card-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--kid-purple);
+  font-size: 1.15rem;
+}
+
+.kids-card-grid .card-text {
+  color: var(--kid-ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
 
 
 
+/* Number strips (forward / backward) */
+.kids-num-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 1.5rem;
+  max-width: 720px;
+  margin: 1rem auto;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: var(--radius-card);
+  border: 3px dashed var(--kid-sky);
+  box-shadow: 0 8px 24px var(--kid-shadow);
+}
 
+.kids-num-bubble {
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--kid-ink);
+  background: linear-gradient(145deg, #fff, var(--kid-peach));
+  border-radius: 12px;
+  border: 3px solid var(--kid-sun);
+  box-shadow: 0 4px 0 var(--kid-sun);
+}
 
+/* Result cards (prime, even/odd) */
+.kids-result-card {
+  width: min(92vw, 420px);
+  margin-top: 1rem;
+  border: none;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: 0 16px 40px var(--kid-shadow-lg);
+  border: 4px solid #fff;
+  background: var(--kid-cloud);
+}
 
+.kids-result-card .card-img-top {
+  max-height: 220px;
+  object-fit: cover;
+}
 
+.kids-result-card .card-body {
+  padding: 1.25rem;
+}
 
+.kids-result-card .card-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--kid-purple);
+}
 
+.kids-result-card .card-text {
+  color: var(--kid-ink-soft);
+}
 
+.kids-result-card .card-body.kids-card-body-pattern {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 234, 167, 0.35) 0%,
+    rgba(255, 255, 255, 0.95) 100%
+  );
+}
 
+/* Table output */
+.kids-table-out {
+  max-width: 520px;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: var(--radius-card);
+  border: 3px solid var(--kid-mint);
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  box-shadow: 0 8px 24px var(--kid-shadow);
+}
 
-
-
-
-
-/* {}  */
+.kids-table-out strong {
+  font-family: var(--font-display);
+  color: var(--kid-purple);
+}
