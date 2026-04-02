@@ -24,9 +24,21 @@
 
 <div  >
 <script>
-      var num = parseInt(prompt("Enter a number:"), 10);
+      var num = parseInt(prompt("Enter a number:"));
+ 
+if(!num){
+    document.writeln(`<div class="d-flex align-items-center justify-content-center">
+     <div class="card animate__animated animate__backInDown kids-result-card">
+       <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHp5MnpyeWtxdXkyYzdlMDFoa2NmcmdibncyM216ZHh2aDR2YXU1diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/55cX2zvcUP1vMlNIMF/giphy.gif" class="card-img-top animate__animated animate__backInLeft" alt="">
+       <div class="card-body animate__animated animate__backInRight kids-card-body-pattern">
+         <h5 class="card-title">${num} is not a number</h5>
+         <p class="card-text mb-0">Try number and see!</p>
+       </div>
+     </div>
+   </div>`);
 
-if (num % 2 === 0) {
+}
+else if (num % 2 === 0) {
     document.writeln(`<div class="d-flex align-items-center justify-content-center">
      <div class="card animate__animated animate__backInDown kids-result-card">
        <img src="https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUyZHhnenhlZnN6c3hoNndxamFqOXAxcHg2ZnJ0cXM5b3ZyeGxnZHRvOCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/1wq3lDAyPXPxjWGKeQ/giphy.gif" class="card-img-top animate__animated animate__backInLeft" alt="">
@@ -36,7 +48,9 @@ if (num % 2 === 0) {
        </div>
      </div>
    </div>`);
-} else {
+}  
+else {
+    
     document.writeln(`<div class="d-flex align-items-center justify-content-center">
      <div class="card animate__animated animate__backInDown kids-result-card">
        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnZjcGEzOHFrczlvbjRzcTFibzdzeDVzc29kc3Q4eDJlYzR1cHZyeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3osxYoCkKu892JBLUc/giphy.gif" class="card-img-top animate__animated animate__backInLeft" alt="">
